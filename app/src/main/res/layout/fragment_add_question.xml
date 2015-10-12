@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context="com.piquor.app.quiz.fragment.AddQuestionFragment">
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="@string/add_a_question" />
+
+    <EditText
+        android:id="@+id/questionET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/question_hint"
+        android:singleLine="true"
+        android:layout_weight="3"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/optionAET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/option_a"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/optionBET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/option_b"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/optionCET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/option_c"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/optionDET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/option_d"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/answer"/>
+        <Spinner
+            android:id="@+id/answerSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:text="@string/add"/>
+
+</LinearLayout>
+</ScrollView>
