@@ -1,6 +1,8 @@
 # Quiz
 A simple quiz app developed on below requirements
 
+![alt tag] (https://raw.githubusercontent.com/passiondroid/Quiz/master/device1.png)
+
 1. Initial screen should show selection of quick category
 2. Second screen should be tabbed. Description and usage of each tab explained below:
     First Tab should show question and optional answer
