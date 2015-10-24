@@ -7,5 +7,11 @@ android:
 before_install:
  - chmod +x gradlew
  
-script:
- - ./gradlew dependencies || ./gradlew dependencies
+deploy:
+  provider: releases
+  user: "passiondroid"
+  password: "India@123"
+  file: "/app/build/outputs/app-release.apk"
+  skip_cleanup: true
+  on:
+    tags: true
